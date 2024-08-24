@@ -12,11 +12,22 @@ a.fill-div {
     position: fixed;
 }
 
-.title{
+.title , .title2{
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-size: 20px;
+    margin-bottom: 10px;
 }
+
+.title:before {
+    display: block;
+  float: right;
+  margin-top: .8em; /* half the line-height */
+  margin-bottom: 10px;
+  border-top: 2px solid silver;
+  width: 100%;
+  content: "";
+  }
 
 .disc{
     color: #48265f;
@@ -43,6 +54,14 @@ a.fill-div {
 }
 
 .item{
+    background-image: linear-gradient(#46318a, #340f49, #28023e);
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.e-item{
     background-image: linear-gradient(#46318a, #340f49, #28023e);
     max-width: 100%;
     height: auto;
@@ -101,6 +120,15 @@ a.fill-div {
     font-weight: 500;
 }
 
+.edescription{
+    height: 25px;
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+}
+
 .description i{
     line-height: 0px;
 }
@@ -121,6 +149,8 @@ a.fill-div {
     line-height: 1px;
     font-size: 13px;
     border-radius: 10px;
+
+    margin-top: 10px;
 }
 
 .modal-content {
@@ -148,7 +178,25 @@ a.fill-div {
 box-shadow: 0px 0px 24px 1px rgba(255,255,255,0.46);
 }
 
+#modalEvideo {
+    border-radius: 10px;
+    width: 100%;
+    -webkit-box-shadow:0px 0px 24px 1px rgba(255,255,255,0.46);
+-moz-box-shadow: 0px 0px 24px 1px rgba(255,255,255,0.46);
+box-shadow: 0px 0px 24px 1px rgba(255,255,255,0.46);
+}
+
 .btn-close {
+    color: white;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.discuser {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
     color: white;
 }
 
