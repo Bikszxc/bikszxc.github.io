@@ -1,0 +1,21 @@
+.content::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+}
+
+.content::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: none;
+}
+
+.content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, #d7cbff),
+									   color-stop(0.72, #fee7ff),
+									   color-stop(0.86, #ffffff));
+}
