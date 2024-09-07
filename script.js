@@ -74,7 +74,58 @@ $(document).ready(function() {
         $("#modalEvideo").attr("src", "");
         const backdrop = $('.modal-backdrop');
         if (backdrop) {
-            backdrop.remove(); // Remove the backdrop after the modal is closed
+            backdrop.remove();
+        }
+    });
+});
+
+$(document).ready(function() {
+    $("body").on("click", ".p-item", function() {
+        const id = $(this).attr('id');
+
+        
+        const { ptitle, pictures, pcamera, pinfo } = photoData[id];
+
+        $("#modalPtitle").text(ptitle);
+        $("#modalPcamera").text(pcamera);
+        $("#modalPinfo").text(pinfo);
+
+        const swiperWrapper = document.querySelector('.carousel-inner');
+        swiperWrapper.innerHTML = '';
+        
+pictures.forEach((picture, index) => {
+    const slide = document.createElement('div');
+    slide.className = index === 0 ? 'carousel-item active' : 'carousel-item';
+
+    const container = document.createElement('div');
+    const img = document.createElement('img');
+    img.src = picture;
+    img.alt = 'Photo';
+    img.className = 'center-block'
+
+    slide.appendChild(img);
+    swiperWrapper.appendChild(slide);
+});
+        // Show the modal
+        $("#myModal3").modal("show");
+
+        // Append the modal and its backdrop to the .content div
+        setTimeout(function() {
+            $('#myModal3').appendTo('.content');
+            $('.modal-backdrop').appendTo('.content');
+        }, 10);
+
+        // Ensure the body doesn't have the padding or modal-open class
+        $('body').removeClass("modal-open");
+        $('body').css("padding-right", "");
+    });
+
+    // Reset the modal content when it is closed
+    $('#myModal3').on('hidden.bs.modal', function() {
+        $("#picture").attr("src", "");
+        const backdrop = $('.modal-backdrop');
+        if (backdrop) {
+            backdrop.remove();
         }
     });
 });
@@ -187,7 +238,20 @@ const editData = {
     }
 }
 
-// Handling modal close
+const photoData = {
+    p1: {
+        ptitle: "Some Photo Collection",
+        pictures: [
+            "https://images.pexels.com/photos/16534745/pexels-photo-16534745/free-photo-of-pavilions-on-gadisar-lake.jpeg",
+            "https://images.pexels.com/photos/26124934/pexels-photo-26124934/free-photo-of-zebra-on-field.jpeg",
+            "https://images.pexels.com/photos/27637373/pexels-photo-27637373/free-photo-of-the-ancient-building-in-ephesus-turkey.jpeg",
+            "https://images.pexels.com/photos/27637373/pexels-photo-27637373/free-photo-of-the-ancient-building-in-ephesus-turkey.jpeg"
+        ],
+        pcamera: "Camera Model",
+        pinfo: "Some additional information"
+    },
+};
+
 const modalElement = document.getElementById('myModal');
 modalElement.addEventListener('hidden.bs.modal', function () {
     document.getElementById('modalVideo').src = '';

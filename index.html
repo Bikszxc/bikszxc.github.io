@@ -12,6 +12,11 @@
 />
 
     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+    <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
@@ -43,6 +48,9 @@
                         </a>
                         <a href="#" class="sidebar-link">
                             Edits
+                        </a>
+                        <a href="#" class="sidebar-link">
+                            Photos
                         </a>
                     </li>
                 </ul>
@@ -194,6 +202,31 @@
                     </div>
                 </div>
 
+                <div class="title">Photos</div>
+                <div class="row cont pps">          
+                    <div id="p1" role="button" class="col hover-zoom p-item">
+                        <section class="header">Alera Grace @ 18</section>
+                        <section class="image">
+                            <img src="https://snipboard.io/AiqMNc.jpg">
+                        </section>
+                        <section class="pdescription">
+                            <p><i class="fa-solid fa-camera"></i> Shot on iPhone XS Max</p>
+                            <p><i class="fa-solid fa-palette"></i> Adobe Lightroom</p>
+                            <p><i class="fa-solid fa-calendar-days"></i> April 04, 2022</p>
+                        </section>
+                    </div>
+                    <div id="p2" role="button" class="col hover-zoom p-item">
+                        <section class="header">Rea Krissyle @ 18</section>
+                        <section class="image">
+                            <img src="https://snipboard.io/iU3tno.jpg">
+                        </section>
+                        <section class="pdescription">
+                            <p><i class="fa-solid fa-camera"></i> Shot on iPhone XS Max</p>
+                            <p><i class="fa-solid fa-palette"></i> Adobe Lightroom</p>
+                            <p><i class="fa-solid fa-calendar-days"></i> April 01, 2022</p>
+                        </section>
+                    </div>
+        
                 <div class="footer">
                   
                 </div>
@@ -271,6 +304,48 @@
         </div>
     </div>
 
+    <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEtitle">Default Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                    <div class="col col-md-8">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                              <!-- Slides -->
+                              <div class="carousel-item active">
+                                <!--Auto added via JS-->
+                                <img id="picture" class="center-block" src="">
+                              </div>
+                            </div> 
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                        </div>
+                    </div>
+                        <div class="col-md-4">
+                        <div class="mdItem">
+                        <div class="header">
+                        <p>Information</p>
+                        </div>
+                        <p><i class="fa-brands fa-uncharted"></i><span id="modalEditor"></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
                
     
 </body>
@@ -278,5 +353,9 @@
     <script src="https://kit.fontawesome.com/9b22194cf1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.10"></script>
+    <!-- EMBLA Carousel -->
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-auto-height/embla-carousel-auto-height.umd.js"></script>
+    <!---->
     <script src="script.js"></script>
 </html>
