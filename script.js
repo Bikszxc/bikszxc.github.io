@@ -235,6 +235,16 @@ const editData = {
         etitle: "NoxusRealms - The Return - 2018",
         evideo: "https://www.youtube.com/embed/ffflvbR6erw?si=-Q1vKC_Zprbv_wAB",
         editor: " Adobe After Effects 2017"
+    },
+    e5: {
+        etitle: "AI - PUBG Roster",
+        evideo: "https://drive.google.com/file/d/1da4Xa0j7qYDFyjt2MoY-4Ye-ZlNNZICi/preview",
+        editor: "Adobe After Effects 2022"
+    },
+    e6: {
+        etitle: "TFBC - Fun Run Advertisement",
+        evideo: "https://drive.google.com/file/d/1h3dqhJou0PLA132zyWEavaxWW4kPiLve/preview",
+        editor: "Adobe After Effects 2022"
     }
 }
 
