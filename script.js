@@ -239,12 +239,17 @@ const editData = {
     e5: {
         etitle: "AI - PUBG Roster",
         evideo: "https://drive.google.com/file/d/1da4Xa0j7qYDFyjt2MoY-4Ye-ZlNNZICi/preview",
-        editor: "Adobe After Effects 2022"
+        editor: " Adobe After Effects 2022"
     },
     e6: {
         etitle: "TFBC - Fun Run Advertisement",
         evideo: "https://drive.google.com/file/d/1h3dqhJou0PLA132zyWEavaxWW4kPiLve/preview",
-        editor: "Adobe After Effects 2022"
+        editor: " Adobe After Effects 2022"
+    },
+    e7: {
+        etitle: "HaikiPlays - Rust",
+        evideo: "https://www.youtube.com/embed/HIiwR9M8dK0?si=PWtaWdwxXH_Ie7td",
+        editor: " DaVinci Resolove Studio 19"
     }
 }
 
