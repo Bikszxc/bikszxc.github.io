@@ -255,6 +255,11 @@ const editData = {
         etitle: "HaikiPlays - Rust 2",
         evideo: "https://www.youtube.com/embed/bu0IpLsijsg?si=FFk4tU_d8d_q1rDm",
         editor: " DaVinci Resolve Studio 19"
+    },
+    e9: {
+        etitle: "HaikiPlays - Rust 3",
+        evideo: "https://www.youtube.com/embed/-zTW_VjaEv4?si=tokc5LRucLEZtCW-",
+        editor: " Davinci Resolve Studio 19"
     }
 }
 
