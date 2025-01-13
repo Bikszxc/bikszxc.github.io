@@ -260,6 +260,11 @@ const editData = {
         etitle: "HaikiPlays - Rust 3",
         evideo: "https://www.youtube.com/embed/-zTW_VjaEv4?si=tokc5LRucLEZtCW-",
         editor: " Davinci Resolve Studio 19"
+    },
+    e10: {
+        etitle: "HaikiPlays - Apex Squads pt. 1",
+        evideo: "https://www.youtube.com/embed/C5604Dw6Nfc?si=Gr4-NcAwvzM4qVPh",
+        editor: " Davinci Resolove Studio 19"
     }
 }
 
