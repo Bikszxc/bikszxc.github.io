@@ -262,8 +262,13 @@ const editData = {
         editor: " Davinci Resolve Studio 19"
     },
     e10: {
-        etitle: "HaikiPlays - Apex Squads pt. 1",
+        etitle: "HaikiPlays - Apex Legends - SQUADS",
         evideo: "https://www.youtube.com/embed/C5604Dw6Nfc?si=Gr4-NcAwvzM4qVPh",
+        editor: " Davinci Resolove Studio 19"
+    },
+    e11: {
+        etitle: "HaikiPlays - Apex Legends - CHOKER",
+        evideo: "https://www.youtube.com/embed/OrM6lgNSx8c?si=cL8WlqOLeLp9cBTe",
         editor: " Davinci Resolove Studio 19"
     }
 }
