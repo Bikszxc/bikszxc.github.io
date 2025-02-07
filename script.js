@@ -270,6 +270,11 @@ const editData = {
         etitle: "HaikiPlays - Apex Legends - CHOKER",
         evideo: "https://www.youtube.com/embed/OrM6lgNSx8c?si=cL8WlqOLeLp9cBTe",
         editor: " Davinci Resolove Studio 19"
+    },
+    e12: {
+        etitle: "HaikiPlays - Rainbow Six Seige - SWITCH SIDES",
+        evideo: "https://www.youtube.com/embed/UPvfEhlyoe4?si=82CNRBlQxo4L1IFy",
+        editor: " Davinci Resolve Studeio 19"
     }
 }
 
