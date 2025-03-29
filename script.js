@@ -274,7 +274,12 @@ const editData = {
     e12: {
         etitle: "HaikiPlays - Rainbow Six Seige - SWITCH SIDES",
         evideo: "https://www.youtube.com/embed/UPvfEhlyoe4?si=82CNRBlQxo4L1IFy",
-        editor: " Davinci Resolve Studeio 19"
+        editor: " Davinci Resolve Studio 19"
+    },
+    e13: {
+        etitle: "GDSC - USA - Alt Class 2025",
+        evideo: "https://drive.google.com/file/d/1VMrYvZLhDIsRxr11fHvA0fFRJhkfcjFV/preview",
+        editor: " Davinci Resolve Studio 19"
     }
 }
 
