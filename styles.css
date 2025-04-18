@@ -256,9 +256,10 @@ box-shadow: 0px 0px 24px 1px rgba(255,255,255,0.46);
     justify-content: center;
     align-items: center;
     pointer-events: all; /* blocks interaction */
-  }
-  
-  .break-message {
+    flex-direction: column; /* Ensure children are stacked vertically */
+}
+
+.break-message {
     text-align: center;
     background: rgba(0, 0, 0, 0.6); /* dark glassy bg */
     padding: 2.5rem 2rem;
@@ -267,16 +268,23 @@ box-shadow: 0px 0px 24px 1px rgba(255,255,255,0.46);
     font-family: inherit;
     max-width: 90%;
     width: 500px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  }
-  
-  .break-message h1 {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.break-message h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
-  
-  .break-message p {
+}
+
+.break-message p {
     font-size: 1.1rem;
     line-height: 1.6;
-  }
+}
+
+.break-logo {
+    width: 110px; /* Small size */
+    height: auto;
+    margin-top: 2rem; /* Spacing between the message box and logo */
+}
+
   
