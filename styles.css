@@ -242,3 +242,41 @@ box-shadow: 0px 0px 24px 1px rgba(255,255,255,0.46);
 
 
 }
+
+#break-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.4); /* dark semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all; /* blocks interaction */
+  }
+  
+  .break-message {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* dark glassy bg */
+    padding: 2.5rem 2rem;
+    border-radius: 1.25rem;
+    color: #fff;
+    font-family: inherit;
+    max-width: 90%;
+    width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  .break-message h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .break-message p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
