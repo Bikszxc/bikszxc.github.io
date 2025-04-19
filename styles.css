@@ -257,6 +257,12 @@ box-shadow: 0px 0px 24px 1px rgba(255,255,255,0.46);
     align-items: center;
     pointer-events: all; /* blocks interaction */
     flex-direction: column; /* Ensure children are stacked vertically */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#break-overlay.fade-out{
+    opacity: 0;
 }
 
 .break-message {
@@ -276,15 +282,22 @@ box-shadow: 0px 0px 24px 1px rgba(255,255,255,0.46);
     margin-bottom: 1rem;
 }
 
+#break-view {
+    margin-top: 20px;
+    color: #fff;
+    font-family: "IBM Plex Mono", monospace;
+    text-decoration: underline;
+}
+
 .break-message p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
 .break-logo {
-    width: 110px; /* Small size */
+    width: 90px; /* Small size */
     height: auto;
-    margin-top: 2rem; /* Spacing between the message box and logo */
+    margin-top: 20px; /* Spacing between the message box and logo */
 }
 
   

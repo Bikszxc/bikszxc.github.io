@@ -1,6 +1,22 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+function viewportfolio(event) {
+    event.preventDefault(); // Prevent the page from jumping
+
+    const element = document.getElementById("break-overlay");
+    if (element) {
+        void element.offsetWidth; // force reflow
+        element.classList.add("fade-out");
+
+        setTimeout(() => {
+            element.remove();
+        }, 500);
+    }
+}
+
+
+
 // jQuery for modal handling
 $(document).ready(function() {
     $("body").on("click", ".item", function() {
